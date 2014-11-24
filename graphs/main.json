@@ -1,0 +1,1106 @@
+{
+    "properties": {
+        "name": "main",
+        "environment": {
+            "type": "noflo-nodejs"
+        },
+        "sha": "53fee37affe2f45adb1025baca36a59163fd1ec1",
+        "changed": true,
+        "project": "webservertest",
+        "id": "webservertest_graphs_main"
+    },
+    "inports": {},
+    "outports": {},
+    "groups": [],
+    "processes": {
+        "Server": {
+            "component": "webserver/Server",
+            "metadata": {
+                "x": -612,
+                "y": 576,
+                "width": 72,
+                "height": 72,
+                "label": "Server"
+            }
+        },
+        "BodyParser": {
+            "component": "webserver/BodyParser",
+            "metadata": {
+                "x": -432,
+                "y": 648,
+                "width": 72,
+                "height": 72,
+                "label": "BodyParser"
+            }
+        },
+        "Output": {
+            "component": "core/Merge",
+            "metadata": {
+                "x": 2520,
+                "y": 972,
+                "width": 72,
+                "height": 72,
+                "label": "Output"
+            }
+        },
+        "SendResponse": {
+            "component": "webserver/SendResponse",
+            "metadata": {
+                "x": 2916,
+                "y": 972,
+                "width": 72,
+                "height": 72,
+                "label": "SendResponse"
+            }
+        },
+        "MatchAllPosts": {
+            "component": "woute/Match",
+            "metadata": {
+                "x": 504,
+                "y": 1584,
+                "width": 72,
+                "height": 72,
+                "label": "MatchAllPosts"
+            }
+        },
+        "MatchMissing": {
+            "component": "woute/Match",
+            "metadata": {
+                "x": 756,
+                "y": 1512,
+                "width": 72,
+                "height": 72,
+                "label": "MatchMissing"
+            }
+        },
+        "Console Output": {
+            "component": "core/Output",
+            "metadata": {
+                "x": 3024,
+                "y": 2340,
+                "width": 72,
+                "height": 72,
+                "label": "Console Output"
+            }
+        },
+        "PostsToPorts": {
+            "component": "woute/ToPorts",
+            "metadata": {
+                "x": 756,
+                "y": 1620,
+                "width": 72,
+                "height": 72,
+                "label": "PostsToPorts"
+            }
+        },
+        "PrintPostsBody": {
+            "component": "core/Output",
+            "metadata": {
+                "x": 900,
+                "y": 1728,
+                "width": 72,
+                "height": 72,
+                "label": "PrintPostsBody"
+            }
+        },
+        "PostsFromPorts": {
+            "component": "woute/FromPorts",
+            "metadata": {
+                "x": 900,
+                "y": 1620,
+                "width": 72,
+                "height": 72,
+                "label": "PostsFromPorts"
+            }
+        },
+        "SendMissingStatus": {
+            "component": "strings/SendString",
+            "metadata": {
+                "x": 1116,
+                "y": 1692,
+                "width": 72,
+                "height": 72,
+                "label": "SendMissingStatus"
+            }
+        },
+        "MissingToPorts": {
+            "component": "woute/ToPorts",
+            "metadata": {
+                "x": 900,
+                "y": 1512,
+                "width": 72,
+                "height": 72,
+                "label": "MissingToPorts"
+            }
+        },
+        "MissingFromPorts": {
+            "component": "woute/FromPorts",
+            "metadata": {
+                "x": 1368,
+                "y": 1584,
+                "width": 72,
+                "height": 72,
+                "label": "MissingFromPorts"
+            }
+        },
+        "woute/Match_e5s4l": {
+            "component": "woute/Match",
+            "metadata": {
+                "label": "woute/Match",
+                "x": -288,
+                "y": 756,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "woute/ToPorts": {
+            "component": "woute/ToPorts",
+            "metadata": {
+                "label": "woute/ToPorts",
+                "x": -180,
+                "y": 684,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "woute/Match_ro8w0": {
+            "component": "woute/Match",
+            "metadata": {
+                "label": "woute/Match",
+                "x": 252,
+                "y": 1224,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "couchdb/WriteDocument_nejt9": {
+            "component": "couchdb/WriteDocument",
+            "metadata": {
+                "label": "couchdb/WriteDocument",
+                "x": 720,
+                "y": 540,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "woute/Match_y7m3j": {
+            "component": "woute/Match",
+            "metadata": {
+                "label": "woute/Match",
+                "x": 108,
+                "y": 1116,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "woute/ToPorts_70vjp": {
+            "component": "woute/ToPorts",
+            "metadata": {
+                "label": "woute/ToPorts",
+                "x": 216,
+                "y": 1044,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "woute/Match_3fu2v": {
+            "component": "woute/Match",
+            "metadata": {
+                "label": "woute/Match",
+                "x": 0,
+                "y": 972,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "woute/ToPorts_7zzyz": {
+            "component": "woute/ToPorts",
+            "metadata": {
+                "label": "woute/ToPorts",
+                "x": 144,
+                "y": 936,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "couchdb/ReadViewDocuments_cnygc": {
+            "component": "couchdb/ReadViewDocuments",
+            "metadata": {
+                "label": "couchdb/ReadViewDocuments",
+                "x": 720,
+                "y": 828,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "strings/Jsonify_blzha": {
+            "component": "strings/Jsonify",
+            "metadata": {
+                "label": "strings/Jsonify",
+                "x": 1044,
+                "y": 792,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "woute/FromPorts_80bgs": {
+            "component": "woute/FromPorts",
+            "metadata": {
+                "label": "woute/FromPorts",
+                "x": 1800,
+                "y": 756,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "core/Merge_29h47": {
+            "component": "core/Merge",
+            "metadata": {
+                "label": "core/Merge",
+                "x": 1296,
+                "y": 756,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "core/Merge_tdxb9": {
+            "component": "core/Merge",
+            "metadata": {
+                "label": "core/Merge",
+                "x": 1260,
+                "y": 540,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "core/Merge_8ut04": {
+            "component": "core/Merge",
+            "metadata": {
+                "label": "core/Merge",
+                "x": 1584,
+                "y": 1080,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "woute/Match_o482n": {
+            "component": "woute/Match",
+            "metadata": {
+                "label": "woute/Match",
+                "x": -144,
+                "y": 864,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "woute/ToPorts_7mqzo": {
+            "component": "woute/ToPorts",
+            "metadata": {
+                "label": "woute/ToPorts",
+                "x": -36,
+                "y": 792,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "couchdb/ReadDocument_rxmbz": {
+            "component": "couchdb/ReadDocument",
+            "metadata": {
+                "label": "couchdb/ReadDocument",
+                "x": 720,
+                "y": 684,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "objects/GetObjectKey_kjl5f": {
+            "component": "objects/GetObjectKey",
+            "metadata": {
+                "label": "objects/GetObjectKey",
+                "x": 396,
+                "y": 684,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "couchdb/DeleteDocument_u9gdm": {
+            "component": "couchdb/DeleteDocument",
+            "metadata": {
+                "label": "couchdb/DeleteDocument",
+                "x": 720,
+                "y": 972,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "strings/SendJson_2i302": {
+            "component": "strings/SendJson",
+            "metadata": {
+                "label": "strings/SendJson",
+                "x": 1152,
+                "y": 216,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "strings/Jsonify_mioud": {
+            "component": "strings/Jsonify",
+            "metadata": {
+                "label": "strings/Jsonify",
+                "x": 1044,
+                "y": 648,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "core/Split_ussk1": {
+            "component": "core/Split",
+            "metadata": {
+                "label": "core/Split",
+                "x": -243.184729230043,
+                "y": 428.58600010533974,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "strings/SendString_iqjcl": {
+            "component": "strings/SendString",
+            "metadata": {
+                "label": "strings/SendString",
+                "x": 1116,
+                "y": 36,
+                "width": 72,
+                "height": 72
+            }
+        }
+    },
+    "connections": [
+        {
+            "src": {
+                "process": "MatchAllPosts",
+                "port": "fail"
+            },
+            "tgt": {
+                "process": "MatchMissing",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 10
+            }
+        },
+        {
+            "src": {
+                "process": "MatchAllPosts",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "PostsToPorts",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 10
+            }
+        },
+        {
+            "src": {
+                "process": "PostsToPorts",
+                "port": "body"
+            },
+            "tgt": {
+                "process": "PrintPostsBody",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 10
+            }
+        },
+        {
+            "src": {
+                "process": "PostsToPorts",
+                "port": "request"
+            },
+            "tgt": {
+                "process": "PostsFromPorts",
+                "port": "request"
+            },
+            "metadata": {
+                "route": 10
+            }
+        },
+        {
+            "src": {
+                "process": "PostsFromPorts",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "Output",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 10
+            }
+        },
+        {
+            "src": {
+                "process": "MatchMissing",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "MissingToPorts",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 10
+            }
+        },
+        {
+            "src": {
+                "process": "MissingToPorts",
+                "port": "url"
+            },
+            "tgt": {
+                "process": "SendMissingStatus",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 10
+            }
+        },
+        {
+            "src": {
+                "process": "SendMissingStatus",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "MissingFromPorts",
+                "port": "status"
+            },
+            "metadata": {
+                "route": 10
+            }
+        },
+        {
+            "src": {
+                "process": "MissingToPorts",
+                "port": "request"
+            },
+            "tgt": {
+                "process": "MissingFromPorts",
+                "port": "request"
+            },
+            "metadata": {
+                "route": 10
+            }
+        },
+        {
+            "src": {
+                "process": "MissingFromPorts",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "Output",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 10
+            }
+        },
+        {
+            "src": {
+                "process": "woute/Match_e5s4l",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "woute/ToPorts",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 7
+            }
+        },
+        {
+            "src": {
+                "process": "woute/Match_ro8w0",
+                "port": "fail"
+            },
+            "tgt": {
+                "process": "MatchAllPosts",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 10
+            }
+        },
+        {
+            "src": {
+                "process": "woute/ToPorts",
+                "port": "body"
+            },
+            "tgt": {
+                "process": "couchdb/WriteDocument_nejt9",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 7
+            }
+        },
+        {
+            "src": {
+                "process": "woute/Match_y7m3j",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "woute/ToPorts_70vjp",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 5
+            }
+        },
+        {
+            "src": {
+                "process": "woute/Match_3fu2v",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "woute/ToPorts_7zzyz",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 9
+            }
+        },
+        {
+            "src": {
+                "process": "woute/ToPorts_7zzyz",
+                "port": "body"
+            },
+            "tgt": {
+                "process": "couchdb/ReadViewDocuments_cnygc",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 9
+            }
+        },
+        {
+            "src": {
+                "process": "core/Merge_29h47",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "woute/FromPorts_80bgs",
+                "port": "body"
+            }
+        },
+        {
+            "src": {
+                "process": "woute/ToPorts",
+                "port": "request"
+            },
+            "tgt": {
+                "process": "core/Merge_tdxb9",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 7
+            }
+        },
+        {
+            "src": {
+                "process": "woute/ToPorts_70vjp",
+                "port": "request"
+            },
+            "tgt": {
+                "process": "core/Merge_tdxb9",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 5
+            }
+        },
+        {
+            "src": {
+                "process": "woute/ToPorts_7zzyz",
+                "port": "request"
+            },
+            "tgt": {
+                "process": "core/Merge_tdxb9",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 9
+            }
+        },
+        {
+            "src": {
+                "process": "core/Merge_tdxb9",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "woute/FromPorts_80bgs",
+                "port": "request"
+            }
+        },
+        {
+            "src": {
+                "process": "MatchMissing",
+                "port": "fail"
+            },
+            "tgt": {
+                "process": "core/Merge_8ut04",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 10
+            }
+        },
+        {
+            "src": {
+                "process": "core/Merge_8ut04",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "Console Output",
+                "port": "in"
+            }
+        },
+        {
+            "src": {
+                "process": "couchdb/ReadViewDocuments_cnygc",
+                "port": "log"
+            },
+            "tgt": {
+                "process": "core/Merge_8ut04",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 9
+            }
+        },
+        {
+            "src": {
+                "process": "couchdb/WriteDocument_nejt9",
+                "port": "log"
+            },
+            "tgt": {
+                "process": "core/Merge_8ut04",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 7
+            }
+        },
+        {
+            "src": {
+                "process": "strings/Jsonify_blzha",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "core/Merge_29h47",
+                "port": "in"
+            }
+        },
+        {
+            "src": {
+                "process": "woute/Match_e5s4l",
+                "port": "fail"
+            },
+            "tgt": {
+                "process": "woute/Match_o482n",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 6
+            }
+        },
+        {
+            "src": {
+                "process": "woute/Match_o482n",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "woute/ToPorts_7mqzo",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 4
+            }
+        },
+        {
+            "src": {
+                "process": "woute/ToPorts_7mqzo",
+                "port": "request"
+            },
+            "tgt": {
+                "process": "core/Merge_tdxb9",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 4
+            }
+        },
+        {
+            "src": {
+                "process": "woute/ToPorts_7mqzo",
+                "port": "body"
+            },
+            "tgt": {
+                "process": "objects/GetObjectKey_kjl5f",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 4
+            }
+        },
+        {
+            "src": {
+                "process": "objects/GetObjectKey_kjl5f",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "couchdb/ReadDocument_rxmbz",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 4
+            }
+        },
+        {
+            "src": {
+                "process": "woute/Match_o482n",
+                "port": "fail"
+            },
+            "tgt": {
+                "process": "woute/Match_3fu2v",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 6
+            }
+        },
+        {
+            "src": {
+                "process": "woute/Match_3fu2v",
+                "port": "fail"
+            },
+            "tgt": {
+                "process": "woute/Match_y7m3j",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 6
+            }
+        },
+        {
+            "src": {
+                "process": "woute/Match_y7m3j",
+                "port": "fail"
+            },
+            "tgt": {
+                "process": "woute/Match_ro8w0",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 6
+            }
+        },
+        {
+            "src": {
+                "process": "woute/ToPorts_70vjp",
+                "port": "body"
+            },
+            "tgt": {
+                "process": "couchdb/DeleteDocument_u9gdm",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 5
+            }
+        },
+        {
+            "src": {
+                "process": "couchdb/DeleteDocument_u9gdm",
+                "port": "log"
+            },
+            "tgt": {
+                "process": "core/Merge_8ut04",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 5
+            }
+        },
+        {
+            "src": {
+                "process": "Output",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "SendResponse",
+                "port": "in"
+            }
+        },
+        {
+            "src": {
+                "process": "Server",
+                "port": "request"
+            },
+            "tgt": {
+                "process": "BodyParser",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 6
+            }
+        },
+        {
+            "src": {
+                "process": "strings/SendJson_2i302",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "woute/FromPorts_80bgs",
+                "port": "headers"
+            }
+        },
+        {
+            "src": {
+                "process": "couchdb/WriteDocument_nejt9",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "strings/Jsonify_mioud",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 7
+            }
+        },
+        {
+            "src": {
+                "process": "strings/Jsonify_mioud",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "core/Merge_29h47",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 7
+            }
+        },
+        {
+            "src": {
+                "process": "BodyParser",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "core/Split_ussk1",
+                "port": "in"
+            },
+            "metadata": {
+                "route": null
+            }
+        },
+        {
+            "src": {
+                "process": "core/Split_ussk1",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "woute/Match_e5s4l",
+                "port": "in"
+            },
+            "metadata": {}
+        },
+        {
+            "src": {
+                "process": "core/Split_ussk1",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "strings/SendJson_2i302",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 0
+            }
+        },
+        {
+            "src": {
+                "process": "woute/FromPorts_80bgs",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "Output",
+                "port": "in"
+            },
+            "metadata": {
+                "route": null
+            }
+        },
+        {
+            "src": {
+                "process": "couchdb/ReadDocument_rxmbz",
+                "port": "log"
+            },
+            "tgt": {
+                "process": "core/Merge_8ut04",
+                "port": "in"
+            },
+            "metadata": {
+                "route": null
+            }
+        },
+        {
+            "src": {
+                "process": "core/Split_ussk1",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "strings/SendString_iqjcl",
+                "port": "in"
+            },
+            "metadata": {
+                "route": 0
+            }
+        },
+        {
+            "src": {
+                "process": "strings/SendString_iqjcl",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "woute/FromPorts_80bgs",
+                "port": "status"
+            },
+            "metadata": {}
+        },
+        {
+            "src": {
+                "process": "couchdb/ReadViewDocuments_cnygc",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "strings/Jsonify_blzha",
+                "port": "in"
+            },
+            "metadata": {
+                "route": null
+            }
+        },
+        {
+            "data": "post",
+            "tgt": {
+                "process": "MatchAllPosts",
+                "port": "method"
+            }
+        },
+        {
+            "data": "404",
+            "tgt": {
+                "process": "SendMissingStatus",
+                "port": "string"
+            }
+        },
+        {
+            "data": "https://maingladdedesesersitente:6bA6SHmTnfVT3Pkjfseyt4Ej@grunt.cloudant.com/gruntfund",
+            "tgt": {
+                "process": "couchdb/WriteDocument_nejt9",
+                "port": "url"
+            }
+        },
+        {
+            "data": "https://maingladdedesesersitente:6bA6SHmTnfVT3Pkjfseyt4Ej@grunt.cloudant.com/gruntfund",
+            "tgt": {
+                "process": "couchdb/ReadViewDocuments_cnygc",
+                "port": "url"
+            }
+        },
+        {
+            "data": "/delete",
+            "tgt": {
+                "process": "woute/Match_y7m3j",
+                "port": "match"
+            }
+        },
+        {
+            "data": "/add",
+            "tgt": {
+                "process": "woute/Match_e5s4l",
+                "port": "match"
+            }
+        },
+        {
+            "data": "https://maingladdedesesersitente:6bA6SHmTnfVT3Pkjfseyt4Ej@grunt.cloudant.com/gruntfund",
+            "tgt": {
+                "process": "couchdb/ReadDocument_rxmbz",
+                "port": "url"
+            }
+        },
+        {
+            "data": "id",
+            "tgt": {
+                "process": "objects/GetObjectKey_kjl5f",
+                "port": "key"
+            }
+        },
+        {
+            "data": "https://maingladdedesesersitente:6bA6SHmTnfVT3Pkjfseyt4Ej@grunt.cloudant.com/gruntfund",
+            "tgt": {
+                "process": "couchdb/DeleteDocument_u9gdm",
+                "port": "url"
+            }
+        },
+        {
+            "data": "get",
+            "tgt": {
+                "process": "woute/Match_ro8w0",
+                "port": "method"
+            }
+        },
+        {
+            "data": "/hgfdkhfkjghfkjhf",
+            "tgt": {
+                "process": "woute/Match_ro8w0",
+                "port": "match"
+            }
+        },
+        {
+            "data": 1337,
+            "tgt": {
+                "process": "Server",
+                "port": "listen"
+            }
+        },
+        {
+            "data": "/getViews",
+            "tgt": {
+                "process": "woute/Match_3fu2v",
+                "port": "match"
+            }
+        },
+        {
+            "data": "/getOneEntity",
+            "tgt": {
+                "process": "woute/Match_o482n",
+                "port": "match"
+            }
+        },
+        {
+            "data": "{\"Access-Control-Allow-Origin\":\"*\",\"Access-Control-Allow-Headers\":\"*\",\"Access-Control-Allow-Methods\":\"*\"}",
+            "tgt": {
+                "process": "strings/SendJson_2i302",
+                "port": "json"
+            }
+        },
+        {
+            "data": "200",
+            "tgt": {
+                "process": "strings/SendString_iqjcl",
+                "port": "string"
+            }
+        }
+    ]
+}

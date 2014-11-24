@@ -1,0 +1,101 @@
+<div class="container">
+	<h3>Settings:</h3>
+</div>
+
+<div class="container">
+<div class="col-md-4">
+	<ul class="settingsList">
+		<li class="settingsOption" id="fundSettingsTrigger">Fund Settings</li><br>
+		<li class="settingsOption" id="gruntSettingsTrigger">Grunt Settings</li><br>
+		<li class="settingsOption" id="addGruntSettingsTrigger">Add Grunt</li><br>
+		<li class="settingsOption">Remove Grunt</li>
+		<li></li>
+	</ul>
+</div>
+<div class="col-md-8">
+	<form id="fundSettings">
+		<h4>Fund Settings</h4>
+		<div class="form-group">
+		  <label for="companyName">Company Name</label>
+		  <input type="text" class="form-control" id="companyName">
+		</div>
+		<div class="form-group">
+		  <label for="projects">Projects</label>
+		  <input type="text" class="form-control" id="projects">
+		</div>
+		<div class="form-group">
+		  <label for="cashMultiplier">Cash Multiplier</label>
+		  <input type="number" class="form-control" id="cashMultiplier">
+		</div>
+		<div class="form-group">
+		  <label for="nonCashMultiplier">Non-Cash Multiplier</label>
+		  <input type="number" class="form-control" id="nonCashMultiplier">
+		</div>
+		<div class="form-group">
+		  <label for="commissionRate">Commission Rate</label>
+		  <input type="number" class="form-control" id="commissionRate">
+		</div>
+		<div class="form-group">
+		  <label for="royaltyRate">Royalty Rate</label>
+		  <input type="number" class="form-control" id="royaltyRate">
+		</div>
+		<center><button id="fundSubmit" type="submit" class="btn btn-default">Submit</button></center>
+	</form>
+	<form id="gruntSettings">
+		<h4>Grunt Settings</h4>
+		<div class="form-group">
+		  <label for="gruntName">Grunt Name</label>
+		  <select class="form-control" id="gruntName">
+				<option>Select Grunt</option>
+				<option ng-repeat="grunt in grunts">{{grunt.id}}</option>
+		  </select>
+		</div>
+		<div class="form-group">
+		  <label for="gruntProjects">Projects</label>
+		  <input type="text" class="form-control" id="gruntProjects">
+		</div>
+		<div class="form-group">
+		  <label for="gruntCashMultiplier">Cash Multiplier</label>
+		  <input type="number" class="form-control" id="gruntCashMultiplier">
+		</div>
+		<div class="form-group">
+		  <label for="gruntNonCashMultiplier">Non-Cash Multiplier</label>
+		  <input type="number" class="form-control" id="gruntNonCashMultiplier">
+		</div>
+		<div class="form-group">
+		  <label for="gruntCommissionRate">Commission Rate</label>
+		  <input type="number" class="form-control" id="gruntCommissionRate">
+		</div>
+		<div class="form-group">
+		  <label for="gruntRoyaltyRate">Royalty Rate</label>
+		  <input type="number" class="form-control" id="gruntRoyaltyRate">
+		</div>
+		<center><button id="gruntSubmit" type="submit" class="btn btn-default">Submit</button></center>
+	</form>
+	<form id="addGruntSettings">
+		<h4>Add Grunt Settings</h4>
+		<input type='hidden' name='type' value='grunt'>
+		<div class="form-group">
+		  <label for="firstName">Grunt First Name</label>
+		  <input type="text" class="form-control" id="firstName" name="firstName">
+		</div>
+		<div class="form-group">
+		  <label for="fullName">Grunt Full Name</label>
+		  <input type="text" class="form-control" id="fullName" name="fullName">
+		</div>
+		<div class="form-group">
+		  <label for="startDate">Start Date</label>
+		  <input type="date" class="form-control" id="startDate" name="startDate">
+		</div>
+		<div class="form-group">
+		  <label for="marketSalary">Market Salary (Yearly)</label>
+		  <input type="number" class="form-control" id="marketSalary" name="marketSalary">
+		</div>
+		<div class="form-group">
+		  <label for="cashCompensation">Cash Compensation</label>
+		  <input type="number" class="form-control" id="cashCompensation" name="cashCompensation">
+		</div>
+		<center><button id="addGruntSubmit" type="submit" class="btn btn-default">Submit</button></center>
+	</form>
+</div>
+</div>

@@ -1,0 +1,137 @@
+/* CSS file for propulsios grunt fund app */
+
+/* Global / Navbar */
+body{
+	font-family: 'Nunito', sans-serif;
+	color: #777;
+	padding-top: 60px;
+}
+h3, h4{
+	color: #000;
+}
+hr{
+	border-top: 1px solid #000;
+}
+a{
+	color: #000;
+}
+a:hover{
+	color: #777;
+}
+.smallLogo{
+	height: 30px;
+}
+.navbar-brand{
+	padding: 10px;
+}
+.navbar-default{
+	background-color: #fff;
+	border-bottom: 1px solid #000;
+}
+.navbar .nav>li>a,
+.navbar-brand{
+	color: #000 !important;
+}
+.navbar-default .navbar-nav>.open>a,
+.dropdown-menu>li>a:hover, 
+.btn:hover{
+	background-color: #777 !important;
+}
+.glyphicon{
+	font-size: 12px;
+}
+.form-control:focus{
+  border-color: #777;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(120, 120, 120, 1);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(120, 120, 120, 1)
+}
+
+/* Login Page */
+.companyLogo{
+	width: 15%;
+}
+.login-form{
+  background-color: #fff;
+  max-width: 500px;
+  padding: 0px 10px;
+  margin: 0 auto;
+}
+input.email{
+  margin-bottom: 0px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+input.password{
+  margin-bottom: 0px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* Home View */
+.fundPie{
+	height: 500px;
+}
+.addButton, .data{
+	float: right;
+}
+
+/* Grunt Specific View */
+.gruntData{
+}
+.subCategory{
+	padding-left: 10px;
+}
+.weeklyContributionsTable, 
+.historyTable{
+	max-width: 100%;
+	overflow: scroll;
+}
+.time, .cash, .equipment,
+.intellectual_property, .commissions{
+	display: none;
+}
+.categoryToggle{
+	cursor: pointer;
+}
+
+/* History Page */
+th{
+	color: #000;
+}
+table{
+	border-color: #000 !important;
+}
+
+/* Settings Page */
+.settingsList{
+	list-style-type: none;
+	padding-left: 0px;
+	color: #000;
+	font-size: 18px;
+}
+.settingsList li:hover{
+	color: #777;
+	cursor: pointer;
+}
+.settingsOption{
+	display: inline;
+}
+#gruntSettings, #addGruntSettings{
+	display: none;
+}
+.selectize-control.multi .selectize-input > div{
+	color: #fff;
+}
+.selectize-control.multi .selectize-input > div{
+	background: #777;
+}
+.selectize-control.multi .selectize-input > div.active{
+	background: #000;
+}
+.selectize-input.focus {
+  border-color: rgb(120, 120, 120);
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(120, 120, 120, 1);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(120, 120, 120, 1)
+}

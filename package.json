@@ -1,0 +1,48 @@
+{
+  "name": "echo",
+  "description": "CouchDB Express Server in node js built with NoFlo",
+  "private": true,
+  "version": "0.1.0",
+  "author": {
+    "name": "Zeke Dean",
+    "email": "zeke.dean@propulsion.io"
+  },
+  "dependencies": {
+    "noflo": "~0.5.11",
+    "coffee-script": "~1.6.3",
+    "noflo-woute": "git+https://github.com/meticulo3366/noflo-woute.git",
+    "noflo-webserver": "git+https://github.com/meticulo3366/noflo-webserver.git",
+    "noflo-core": "~0.1.x",
+    "noflo-strings": "~0.1.x",
+    "noflo-nodejs": ">=0.0.6",
+    "noflo-couchdb": "git+https://github.com/meticulo3366/noflo-couchdb.git",
+    "mongoose": "~3.8.19",
+    "noflo-mongoose": "git+https://github.com/djdeath/noflo-mongoose.git",
+    "noflo-objects": "~0.1.12",
+    "ecstatic": "~0.5.6",
+    "noflo-filesystem": "~1.0.6"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-coffee": "~0.6.6",
+    "grunt-coffeelint": "~0.0.6",
+    "grunt-cafe-mocha": "~0.1.2",
+    "chai": "~1.5.0",
+    "mocha": "~1.9.0",
+    "grunt-mocha-phantomjs": "~0.2.2",
+    "grunt-component-build": "~0.2.7",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-watch": "~0.3.1",
+    "component-json": "~0.1.4",
+    "grunt-combine": "~0.8.3"
+  },
+  "keywords": [],
+  "scripts": {
+    "main": "./node_modules/.bin/coffee ./lib/main.coffee"
+  },
+  "noflo": {
+    "components": {
+      "EmptyBody": "./components/EmptyBody.coffee"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+curl "http://localhost:1337/echo" -d '{"a":"b"}' -H "Content-Type: application/json"
+
+curl "http://localhost:1337/add" -d '{"full_name": "Dustin Williams", "type":"time", "start-timestamp": "1416278579", "end-timestamp":"1416283831", "project": "gruntapp","description":"ugh i cant stand inserting data","type":"time"}' -H "Content-Type: application/json"
+
+curl "http://localhost:1337/get" -d '{"designDocID":"time","viewName":"newView"}' -H 'Content-Type: application/json'
+
+
+
+
+
+f62c7bfaba99bf65b44dd1e47cddab74
+
+
+# get grunts
+curl "http://localhost:1337/get" -d '{"designDocID":"time","viewName":"newView"}' -H 'Content-Type: application/json'
+
+
+curl "http://localhost:1337/delete/1783b56c4efcecd27ab0643352ae7272/1-e68ee6da911fb22b8866b457527a8568"
+
+
+
+# get times (grunt timer)
+
+curl "http://localhost:1337/get" -d '{"designDocID":"time","viewName":"newView"}' -H 'Content-Type: application/json'
+
+# get cash
+curl "http://localhost:1337/get" -d '{"designDocID":"cash","viewName":"newView"}' -H 'Content-Type: application/json'
+
+# get grunts
+curl "http://localhost:1337/get" -d '{"designDocID":"grunt","viewName":"newView"}' -H 'Content-Type: application/json'
+
+# get intellectual_property
+curl "http://localhost:1337/get" -d '{"designDocID":"intellectual_property","viewName":"newView"}' -H 'Content-Type: application/json'
+
+# get single document
+curl "http://localhost:1337/view" -d '{"id":"1783b56c4efcecd27ab0643352ae7272"}' -H 'Content-Type: application/json'
+
+# delete document
+curl "http://localhost:1337/delete" -d '{"id":"60f8408304b19b258112bc2b24d6ddcb","rev":"1-1a3a5a9de810522a73ff4c648834b7e8"}' -H 'Content-Type: application/json'
